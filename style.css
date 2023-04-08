@@ -1,0 +1,330 @@
+
+body {
+    margin: 0;
+    width: 100%;
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(35, 66, 74);
+}
+.header {
+    margin: 0 auto;
+    padding: 1px 30px;
+    background: rgb(64, 224, 208, .7);
+    max-height: 150px;
+}
+.title {
+    font-size: 1rem;
+    width: 50%;
+}
+.sub-title {
+    width: 250px;
+}
+.sub-title ul {
+    list-style: none;
+    font-size: 1rem;
+}
+/*
+.nav-container {
+    background: rgb(76, 177, 211);
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+}*/
+.nav-container {
+    margin: 50px 0;
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: space-around;
+}.card-header {
+    width: 10%;
+    max-height: 100px;
+    background: rgb(64, 224, 208);
+    border-radius: 100%;
+    box-shadow: 10px 0 10px rgb(64, 224, 208);
+}
+.card__header {
+    width: 75%;   
+}
+.sub-container {
+    font-size: 1rem;
+    padding: 0px;
+    position: relative;
+    max-height: 60px;
+    
+}
+.sub_container__app {
+    font-size: 1rem;
+    padding: 0px;
+    position: absolute;
+    min-width: 275px;
+    max-width: 275px;
+}
+.dropbtn{
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(64, 224, 208);
+    background: transparent;
+    color: white;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    
+}
+.drop_button {
+    margin: 10px 0;
+    min-width: 250px;
+}
+.dropdown-content {
+    display: none;
+     position: absolute;
+     margin: 10px 0;
+     font-size: 1rem;
+     line-height: 2rem;
+     text-align: center;
+     padding: 5px;
+     border-radius: 10px;
+     z-index: 1;
+     
+    transform-origin: top;
+    transition-duration: 20s;
+    transition-timing-function: ease-in;
+    
+ }
+.dropdown-content a {
+    
+}
+.sub-container:hover .dropdown-content  {
+    position: relative;
+    display: block;transform: scale(1,1);
+    background: red;
+}
+.sub_container__app:hover .dropdown-content__app {
+    position: relative;
+    display: flex;
+    
+}
+.dropbtn:hover {
+    background: rgb(64, 224, 208);
+    box-shadow: 0 -10px 15px rgb(64, 224, 208);
+}/*
+.dropbtn__app:hover {
+    background: rgb(64, 224, 208);
+    box-shadow: 0 -10px 15px rgb(64, 224, 208);
+}*/
+
+.dropdown-content__app {
+    display: none;
+    box-shadow: 0 0 .5px  rgb(64, 224, 208);
+    justify-content: space-around;
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    padding: 5px;
+    min-width: 900px;
+    border-radius: 10px;
+    z-index: 1;
+    
+}
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: white;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+}
+.dropdown-content .drop_button {
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: white;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+}
+.dropdown-content__app a {
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: white;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+}
+.dropdown-content a:hover{
+    box-shadow: 0 -10px 10px rgb(64, 224, 208);
+    
+}
+.dropdown-content .drop_button:hover{
+    box-shadow: 0 -10px 10px rgb(64, 224, 208);
+    
+}
+.dropdown-content__app a:hover{
+    box-shadow: 0 0 10px rgb(64, 224, 208);
+    
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.badge__container {
+    display: flex;
+    justify-content: center;
+}
+.badge {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background:rgb(64, 224, 208, .7);
+    box-shadow: 0 0 5px 02px rgb(64, 224, 208);
+}
+.card {
+    font-size: 1rem;
+    background: rgb(35, 66, 74);
+    height: 100%;
+    max-width: 400px;
+}
+
+.card-body {
+    padding: 30px;
+}
+.card-footer {
+    background: rgb(64, 224, 208, .7);
+    padding: 20px;
+    text-align: center;
+    
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.card-footer a {
+    margin: 5px;
+    font-size: 2rem;
+    color: white;
+}
+.card-footer h2 {
+    font-size: 1.5rem;
+}
+.social-icon {
+    transition: 250ms;
+}
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.show-area {
+    width: 1100px;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+span {
+    display: flex;
+    height: 100%;
+}
+.item__container {
+    box-shadow: 0 0 1px rgb(64, 224, 208);
+    border-radius: 20px;
+    padding: 30px;
+    width: 75%;
+    min-height: 65%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+/*the following sigment is for the index page*/
+.item_container__show_area {
+   /* border: 2px solid black;*/
+    margin: auto;
+    width: 50%;
+    color: white;
+    text-align: center;
+}
+
+
+.introduction {
+    font-size: 4rem;
+}
+
+
+.item_img_container {
+    background: brown;
+    width: 20%;
+    max-height: 100px;
+    box-shadow: 0 0 10px black;
+    transition: 250ms;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+.item__container {
+    text-align: center;
+}
+.item_img_container:hover {
+    transform: scale(1.2);
+}
+
+.item:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgb(35, 66, 74);
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 110%;
+  }
+  
+.item:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@media (max-width: 700px) {
+     .nav-container{
+       /* background: rgb(64, 224, 208);*/
+        margin: 0 auto;
+     }
+    nav ul {
+        display: block;
+        list-style: none;
+    }
+    .sub-container {
+        width: 80%;
+    }
+    /*.container {
+        background: grey;
+    }*/
+    .item__container {
+        display: block;
+        border: 3px solid;
+    }
+    .item {
+        margin: 10px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 350px) {
+    .container {
+        display: block;
+    }
+}
+
