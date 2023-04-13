@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    font-family: Ubuntu;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
     margin: 0 auto;
     padding: 1px 30px;
     background: rgb(64, 224, 208, .7);
-    max-height: 150px;
+    min-height: 150px;
     display: flex;
     justify-content:space-between;
 }
@@ -230,7 +231,8 @@ span {
     box-shadow: 0 0 1px rgb(64, 224, 208);
     border-radius: 20px;
     padding: 30px;
-    min-height: 65%;
+    min-height: 80%;
+    max-width: 80%;
     display: flex;
     justify-content: space-around;
     margin: auto;
@@ -285,11 +287,6 @@ span {
 .item:hover:before {
     opacity: 1;
     visibility: visible;
-}
-
-footer {
-    margin-top: auto;
-    background: lime;
 }
 
 .card-footer {
