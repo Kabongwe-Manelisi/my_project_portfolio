@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="script.js"></script>
     </head>
     
     <body>
@@ -39,7 +40,7 @@
                 <div class="sub-container">
                     <button class="dropbtn">PROGRAMMING/CODING PROJECTS</button>
                     <div class="dropdown-content">
-                        <a href="subject_pages/element_design.html">Element design</a>
+                        <a href="javascript:void(0)" onclick="replaceVeiw(document.getElementById('show-area'))">Element design</a>
                         <a href="subject_pages/webpage.html">Webpages</a>
                         <div class= "sub_container__app">
                             <div class="drop_button">Applications</div>
@@ -112,7 +113,7 @@
                 
             </div>
 
-            <div class="show-area">
+            <div class="show-area" id="show-area">
                 <div class="item_container__show_area">
                     <span class="introduction">WELCOME</span>   
                 </div>

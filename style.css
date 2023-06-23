@@ -457,8 +457,8 @@ span {
         justify-content: space-between;
         width: 30%;
     }
-    .social-icon {
-    }
+    /*.social-icon {
+    }*/
 }
 
 @media (max-width: 350px) {
