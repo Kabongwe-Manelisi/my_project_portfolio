@@ -1,3 +1,3 @@
 function replaceVeiw() {
-  document.getElementById("show-area").innerHTML = "<div><h1>hellow world</h1</div>";
+  document.getElementById('show-area').innerHTML = '<div class="show-area"><span><div class="item__container"><div class="item_img_container"><a href="https://codepen.io/DemonNoSh0kan/details/zYJeWLz"data-hover="Dropdown Menu Button (Hover)"class="item"><img src="../showcase-items/dropdown_menu.jpg" alt="Dropdown menu button"class="img"></a></div><div class="item_img_container"><a href="https://codepen.io/DemonNoSh0kan/details/vYzGKZo"data-hover="Space Odyssey Background (Animated)"class="item"><img src="../showcase-items/space_odyssey_background.jpg" alt="Dropdown menu button"class="img"></a></div></div></span></div>';
 }
