@@ -9,15 +9,15 @@ body {
     width: 100%;
     font-size: 2rem;
     color: white;
-    background-color: rgb(35, 66, 74);
+    background-color: black;
     display: flex;
     flex-direction: column;
 }
 
 .header {
     margin: 0 auto;
-    padding: 1px 30px;
     background: rgb(64, 224, 208, .7);
+    width: 100%;
     min-height: 150px;
     display: flex;
     justify-content:space-between;
@@ -41,7 +41,7 @@ body {
     margin: 10px;
     padding-left: 10px;
     border-radius: 1px;
-    border-left: 2px solid turquoise;
+    border-left: 2px solid black;
 }
 
 .card-header {
@@ -203,18 +203,22 @@ body {
 
 .badge {
     margin: 0 10px;
+    min-width: 100px;
     max-width: 100px;
     padding: 10px;
     border-radius: 15px;
-    background:rgb(64, 224, 208, .7);
-    box-shadow: 0 0 5px 02px rgb(64, 224, 208);
+    background:black;
+    box-shadow: 0 0 5px rgb(64, 224, 208);
 }
 
 .card {
     font-size: 1rem;
-    background: rgb(35, 66, 74);
-    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px   rgb(64, 224, 208, .7);
+    min-height: 600px;
+    max-height: 100%;
     max-width: 400px;
+    margin: 20px;
 }
 
 .social-icon {
@@ -240,7 +244,7 @@ span {
 }
 
 .item__container {
-    box-shadow: 0 0 1px rgb(64, 224, 208);
+    box-shadow: 0 0 20px rgb(64, 224, 208);
     border-radius: 20px;
     padding: 30px;
     min-height: 80%;
@@ -313,7 +317,7 @@ span {
 }
 
 .card-footer {
-    margin-top: auto;
+    margin-top: 100px;
     background: rgb(64, 224, 208, .7);
     padding: 20px;
     text-align: center;
