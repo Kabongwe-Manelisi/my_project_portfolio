@@ -219,7 +219,7 @@ body {
 }
 
 .card {
-    background: var(--theme-color);
+    background: var(--background-color);
     font-size: 1rem;
     border-radius: 15px;
     box-shadow: 0 0 20px   var(--theme-color);
@@ -253,7 +253,7 @@ span {
 
 .item__container {
     box-shadow: 0 0 20px var(--theme-color);
-    background: var(--theme-color);
+    background: var(--background-color);
     border-radius: 20px;
     padding: 30px;
     min-height: 80%;
@@ -289,7 +289,7 @@ span {
     margin: auto;
     max-width: 150px;
     max-height: 100px;
-    box-shadow: 0 0 10px var(--background-color);
+    box-shadow: 0 0 10px var(--theme-color);
     transition: 250ms;
     animation-name: show_area;
     animation-duration: 5s;
