@@ -28,13 +28,11 @@ body {
 }
 
 .header-container{
-    width: 50%;
+    width: 25%;
     background: pink;
-    display: flex;
 }
 
 .title {
-    width: 50%;
     background: blue;
 }
 .sub-title {
@@ -46,7 +44,6 @@ body {
 }
 
 .sub-title li {
-    margin: 10px;
     padding-left: 10px;
     border-radius: 1px;
     border-left: 2px solid black;
@@ -66,15 +63,18 @@ body {
 }
 
 .nav-container {
-    margin: 50px 0;
-    width: 100%;
-    min-height: 150px;
-    display: flex;
-    justify-content: space-around;
+    background: black;
+    width: 50%;
+    min-height: 100px;
 }
-
+.sub_nav__container{
+    background: gold;
+    max-height: 100px;
+    display: flex
+}
 .sub-container {
-    padding: 10px 0;
+    margin: auto;
+    background: silver;
     position: relative;
     min-width: 200px;
     max-height: 60px;
