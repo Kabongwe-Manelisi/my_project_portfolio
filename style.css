@@ -29,11 +29,10 @@ body {
 
 .header-container{
     width: 25%;
-    background: pink;
 }
 
 .title {
-    background: blue;
+    top: 0;
 }
 .sub-title {
     border: 2px solid green;
@@ -63,21 +62,18 @@ body {
 }
 
 .nav-container {
-    background: black;
     width: 50%;
     min-height: 100px;
 }
 .sub_nav__container{
-    background: gold;
     max-height: 100px;
     display: flex
 }
 .sub-container {
     margin: auto;
-    background: silver;
     position: relative;
     min-width: 200px;
-    max-height: 60px;
+    max-height: 45px;
     text-align: center;
 }
 .sub_container__app {
@@ -106,7 +102,6 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    margin: 10px 0;
     line-height: 2rem;
     text-align: center;
     padding: 5px;
@@ -192,8 +187,8 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row;
-    height: 100%;
+    margin: auto;
+    width: 80%;
 }
 
 .card-body {
@@ -232,6 +227,9 @@ body {
 .social-icon {
     transition: 250ms;
 }
+.social-icon a {
+    color: white;
+}
 
 .social-icon:hover {
     transform: scale(1.2);
@@ -241,7 +239,6 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
 }
 
 span {
@@ -252,7 +249,7 @@ span {
 }
 
 .item__container {
-    box-shadow: 0 0 20px var(--theme-color);
+    /*box-shadow: 0 0 20px var(--theme-color);*/
     background: var(--background-color);
     border-radius: 20px;
     padding: 30px;
@@ -324,18 +321,19 @@ span {
 }
 
 .card-footer {
-    margin-top: 100px;
     background: var(--theme-color);
-    padding: 20px;
+    width: 100%;
     text-align: center;
+    margin-top: auto;
 }
 
 .footer-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .card-footer a {
     margin: 5px;
