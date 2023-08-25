@@ -11,16 +11,23 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="script.js"></script>
     </head>
-    
+
     <body>
+        <!--
+            Beginning of navigation bar
+        -->
         <div class="header">
-            <div class="header-container">
-                <div class="title">
+            <!--
+                top left navigation container
+                contains name plus contact icons
+            -->
+            <div class="topLeftContainer">
+                <div class="topLeftTextContainer">
                     <h1>
                         Manelisi Manzini
                     </h1>
                 </div>
-                <div class="footer-container">
+                <div class="topLeftIconContainer">
             
                     <div class="social-icon">
                         <a href="https://api.whatsapp.com/send?phone=27687294479&text=Hello%21%20."><i class="fab fa-whatsapp"></i></a>
@@ -38,79 +45,43 @@
                         <a href="https://www.reddit.com/user/Kabongwe"><i class="fab fa-reddit"></i></a>
                     </div>
                 </div>
-                
-                
             </div>
-            <nav class="nav-container">
-                <span class="sub_nav__container">
-                    <div class="sub-container">
-                        <button class="dropbtn">CODING</button>
-                        <div class="dropdown-content">
-                            <a href="javascript:void(0)" onclick="showElementDesign(document.getElementById('show-area'))">Mark-up Designs</a>
-                            <a href="javascript:void(0)"onclick="showWebPages(document.getElementById('show-area'))">Webpage Layouts</a>
-                            <div class= "sub_container__app">
-                                <div class="drop_button">Applications</div>
-                                <div class="dropdown-content__app">
-                                    <a href="">Web-Application</a>
-                                    <a href="">Android Applications</a>
-                                    <a href="">Software</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sub-container">
-                        <button class="dropbtn">GRAPHIC DESIGN</button>
-                        <div class="dropdown-content">
-                            <a href="javascript:void(0)" onclick="showPictures(document.getElementById('show-area'))">Pictures</a>
-                        </div>
-                    </div>
-                    <div class="sub-container">
-                        <button class="dropbtn">EDITING</button>
-                        <div class="dropdown-content">
-                            <a href="javascript:void(0)" onclick="showVideos(document.getElementById('show-area'))">Videos</a>
-                            <a href="javascript:void(0)" onclick="showPhotos(document.getElementById('show-area'))">Photos</a>
-                        </div>
-                    </div>
-                 </span>       
+            <!--
+                end of top left navigation container
+            -->
+            <!--
+                top middle container
+                contains navigation buttons
+            -->
+            <nav class="topMiddleChildContainer">
+                <div class="dropBtn">
+                    <button class="dropbtn" onclick="showCodingNav(document.getElementById('dropDownContent'))">CODING</button>
+                </div>
+
+                <div class="dropBtn">
+                    <button class="dropbtn" onclick="showGraphicsNav(document.getElementById('dropDownContent'))">GRAPHIC</button>
+                </div>
+                <div class="dropBtn">
+                    <button class="dropbtn" onclick="showProgramsNav(document.getElementById('dropDownContent'))">PROGRAMS</button>
+                </div>       
             </nav>
-            <div class="card-header">
-                <img src="img/kmmanzini.png" alt="image" class="card__header">
+            <div class="topRightChildContainer">
+                <img src="img/kmmanzini.png" alt="image" class="topLeftImg">
             </div>
         </div>
-        
+        <!--new drop down conatiner-->
+        <div>
+            <div class="dropDownContent" id="dropDownContent">
+                
+            </div>
+        </div>
+        <!--
+            end of navigation bar
+        -->
         <div class="container">
-           <!-- <div class="card">
-                <div class="card-body">
-                    <h1>
-                        Languages
-                    </h1>
-                    <div class="badge__container">
-                        <div class="badge">
-                            <p><b>HTML</b></p>
-                        </div>
-                        <div class="badge">
-                            <p><b>CSS</b></p>
-                        </div>    
-                    </div>
-                    <div class="badge__container">
-                        <div class="badge">
-                            <p><b>JAVA SCRIPT</b></p>
-                        </div>
-                        <div class="badge">
-                            <p><b>PHP</b></p>
-                        </div>
-                    </div>
-                    <div class="badge__container">
-                        <div class="badge">
-                            <p><b> SOLIDITY</b></p>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-
             <div class="show-area" id="show-area">
                 <div class="item_container__show_area">
-                    <span class="introduction">WELCOME</span>   
+                    WELCOME   
                 </div>
             </div>
         </div>

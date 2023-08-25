@@ -2,86 +2,94 @@ html {
     height: 100%;
     font-family: Ubuntu;
 }
+/*variables*/
 :root {
-    --background-color: rgb(0, 0, 0);
+    --background-color: rgb(94, 89, 89);
     --theme-color: rgb(64, 224, 208, .7);
 }
+/*end*/
+
+/*esentailly the background encapsulating all visible expressions on browser*/
 body {
     min-height: 100%;
     margin: 0;
     width: 100%;
     font-size: 1rem;
     color: white;
-    background-color: black;
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
 }
-
+/*end*/
+/*BEGINNING OF NAVIGATION BAR*/
+/*navigationBar parent container*/
 .header {
     margin: 0 auto;
     background: var(--theme-color);
     width: 100%;
-    min-height: 50px;
-    max-height: 100px;
     display: flex;
     justify-content:space-between;
 }
-
-.header-container{
+/*end*/
+/*navigationBar top left child container*/
+.topLeftContainer{
     width: 25%;
+    background: red;
 }
-
-.title {
+/*end*/
+/*navigationBar top left text container*/
+.topLeftTextContainer {
     top: 0;
+    background: blue;
 }
-.sub-title {
+/*end*/
+/*navigationBar top left icon container*/
+.topLeftIconContainer {
     border: 2px solid green;
-}
-.sub-title ul {
-    list-style: none;
     display: flex;
+    justify-content: space-around;
 }
-
-.sub-title li {
-    padding-left: 10px;
-    border-radius: 1px;
-    border-left: 2px solid black;
-}
-
-.card-header {
+/*end*/
+/*navigationBar top left child container*/
+.topRightChildContainer {
     width: 10%;
     margin: auto 0 ;
     max-height: 100px;
     border-radius: 100%;
+    background: var(--background-color);
     box-shadow: 0px 0 20px var(--background-color);
 }
-
-.card__header {
+/*end*/
+/*navigationBar top left img*/
+.topLeftImg {
     width: 75%; 
     clip-path: circle();  
 }
-
-.nav-container {
+/*end*/
+/*top middle child container*/
+.topMiddleChildContainer {
     width: 50%;
-    min-height: 100px;
+    display: flex;
 }
-.sub_nav__container{
-    max-height: 100px;
-    display: flex
-}
-.sub-container {
+/*end*/
+/*BEGINNING OF navigationBar drop button*/
+/*navigationBar drop button (the layer around the actual button)*/
+.dropBtn {
     margin: auto;
     position: relative;
-    min-width: 200px;
-    max-height: 45px;
+    min-width: 150px;
     text-align: center;
 }
-.sub_container__app {
+/*end*/
+/*button located inside drop down menue*/
+.innerBtnContainer {
     padding: 0px;
     position: absolute;
     min-width: 100%;
     max-width: 100%;
 }
+/*end*/
+/*navigationBar drop button (the actual button)*/
 .dropbtn{
     padding: 16px;
     width: 100%;
@@ -92,13 +100,16 @@ body {
     color: white;
     transition-duration: 500ms;
     transition-timing-function: ease-in-out;
-    
 }
+/*end*/
+/*navigationBar button (the actual button of the button located inside the drop menue)*/
 .drop_button {
     margin: 10px 0;
     min-width: 100%;
 }
-
+/*end*/
+/*BEGINNING OF HOVER AND DROPDOWN FUNCTIONS AND STYLES*/
+/*navigation bar drop menue*/
 .dropdown-content {
     display: none;
     position: absolute;
@@ -111,16 +122,18 @@ body {
     transition-duration: 20s;
     transition-timing-function: ease-in;  
  }
-
-.sub-container:hover .dropdown-content  {
+ /*navigation bar button outer layer hover function*/
+.dropBtn:hover /*.dropdown-content*/  {
     position: relative;
     display: block;transform: scale(1,1);
 }
-
-.sub_container__app:hover .dropdown-content__app {
+/*end*/
+/*second layer drop down menue button outter layer function*/
+.innerBtnContainer:hover .dropdown-content__app {
     position: relative;
     display: flex;
 }
+/*end*/
 
 .dropbtn:hover {
     background: var(--theme-color);
@@ -184,11 +197,17 @@ body {
     background: var(--background-color);
     box-shadow: 0 0 10px var(--theme-color);
 }
+/*end of hover and dropdown functions and styles*/
+/*end of navigation bar drop menue buttons*/
+/*end of navigation bar*/
+
+/*BEGINNING OF THE BODY*/
 
 .container {
-    display: flex;
     margin: auto;
     width: 80%;
+    min-height: 100px;
+    background: white;
 }
 
 .card-body {
@@ -239,18 +258,20 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    background: gold;
 }
 
 span {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    
     height: 100%;
+    border: 5px dotted red;
 }
 
 .item__container {
-    /*box-shadow: 0 0 20px var(--theme-color);*/
-    background: var(--background-color);
+    box-shadow: 0 0 20px var(--theme-color);
+    /*background: var(--background-color);*/
     border-radius: 20px;
     padding: 30px;
     min-height: 80%;
@@ -282,9 +303,8 @@ span {
 
 
 .item_img_container {
+    background: grey;
     margin: auto;
-    max-width: 150px;
-    max-height: 100px;
     box-shadow: 0 0 10px var(--theme-color);
     transition: 250ms;
     animation-name: show_area;
@@ -293,8 +313,7 @@ span {
 }
 
 .img {
-    width: 100%;
-    min-height: 100px;
+    width: 10%;
 }
 
 .item_img_container:hover {
