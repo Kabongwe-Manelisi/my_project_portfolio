@@ -1,12 +1,12 @@
 //navigation bar button functions
 function showCodingNav() {
-  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><button onclick="showPens(document.getElementById(\'show-area\'))">Codepens</button><button onclick="showLayouts(document.getElementById(\'show-area\'))">Layouts</button></div>'
+  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><button class="button" onclick="showPens(document.getElementById(\'show-area\'))">Codepens</button><button class="button" onclick="showLayouts(document.getElementById(\'show-area\'))">Layouts</button></div>'
 }
 function showGraphicsNav() {
-  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><button onclick="showGraphics(document.getElementById(\'show-area\'))">Graphics</button></div>'
+  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><button class="button" onclick="showGraphics(document.getElementById(\'show-area\'))">Graphics</button></div>'
 }
 function showProgramsNav() {
-  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><button onclick="showSoftware(document.getElementById(\'show-area\'))">Software</button><button onclick="showApps(document.getElementById(\'show-area\'))">Apps</button></div>'
+  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><button class="button" onclick="showSoftware(document.getElementById(\'show-area\'))">Software</button><button class="button" onclick="showApps(document.getElementById(\'show-area\'))">Apps</button></div>'
 }
 //drop down menue content button functions
 function showPens() {
