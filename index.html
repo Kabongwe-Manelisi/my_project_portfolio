@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="assets/jquery.js"></script>
         <script src="script.js"></script>
     </head>
 
@@ -16,7 +17,7 @@
         <!--
             Beginning of navigation bar
         -->
-        <div class="header">
+        <div class="header"><!--contains entire navigation bar content-->
             <!--
                 top left navigation container
                 contains name plus contact icons
@@ -24,28 +25,31 @@
             <div class="topLeftContainer">
                 <div class="topLeftTextContainer">
                     <h1>
-                        Manelisi Manzini
+                        Manelisi Kabongwe
                     </h1>
                 </div>
                 <div class="topLeftIconContainer">
             
                     <div class="socialIcon">
-                        <a href="https://api.whatsapp.com/send?phone=27687294479&text=Hello%21%20."><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=27655114487&text=Hello%21%20."><i class="fab fa-whatsapp"></i></a>
                     </div>
                     <div class="socialIcon">
-                        <a href=""><i class="fab fa-discord"></i></a>
+                        <a href="https://discord.gg/EgMKvmf6P6"><i class="fab fa-discord"></i></a>
                     </div>
                     <div class="socialIcon">
-                        <a href="https://twitter.com/DemonNoSh0kan"><i class="fab fa-twitter"></i></a>
+                        <a href="https://twitter.com/@Manelisi_420"><i class="fab fa-twitter"></i></a>
                     </div>
                     <div class="socialIcon">
-                        <a href="https://www.facebook.com/kabongwe.manzini.9"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/manelisiKabongwe"><i class="fab fa-facebook"></i></a>
                     </div>
                     <div class="socialIcon">
-                        <a href="https://www.reddit.com/user/Kabongwe"><i class="fab fa-reddit"></i></a>
+                        <a href="https://www.reddit.com/user/Demon_no_Shokan"><i class="fab fa-reddit"></i></a>
                     </div>
                     <div class="socialIcon">
-                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/DemonNoShokan"><i class="fab fa-telegram"></i></a>
+                    </div>
+                    <div class="socialIcon">
+                        <a href="https://www.instagram.com/manelisi_kabongwe/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -60,7 +64,6 @@
                 <div class="dropBtn">
                     <button class="dropbtn" onclick="showCodingNav(document.getElementById('dropDownContent'))">CODING</button>
                 </div>
-
                 <div class="dropBtn">
                     <button class="dropbtn" onclick="showGraphicsNav(document.getElementById('dropDownContent'))">GRAPHIC</button>
                 </div>
@@ -73,32 +76,50 @@
             </div>
         </div>
         <!--new drop down conatiner-->
-        <div>
-            <div class="dropDownContent" id="dropDownContent">
-                
-            </div>
+        <div class="dropContentContainer"id="dropDownContent">
         </div>
         <!--
             end of navigation bar
+        --> 
+        <!--
+            beginning of document body
         -->
-        <div class="container">
-            <div class="show-area" id="show-area">
-                <div class="item_container__show_area">
-                    WELCOME   
-                </div>
-            </div>
+        <div class="bodyContainer" id="imgContainer"><!--contains entire mid-section content-->
+            
         </div>
-        
+        <!--
+            end of document body
+        -->
     </body>
-    <div class="card-footer">
-        <h2>connect with me:</h2>
-        <!--<div class="sub-title">
-            <ul>
-                <li>Front-end</li>
-                <li>Back-end</li>
-                <li>Blockchain</li>
-                <li>Graphic design</li>
-            </ul>
-        </div>-->
-    </div>
+    
+    <footer>
+        <ul class="footerList">
+            <li>
+                <a href="">
+                    HTML
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    CSS
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    JAVA
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    PYTHON
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    SOLIDITY
+                </a>
+            </li>
+        </ul>
+    </footer>
+    
 </html>

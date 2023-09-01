@@ -1,26 +1,51 @@
 //navigation bar button functions
 function showCodingNav() {
-  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><button class="button" onclick="showPens(document.getElementById(\'show-area\'))">Codepens</button><button class="button" onclick="showLayouts(document.getElementById(\'show-area\'))">Layouts</button></div>'
+  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><span class="dropContentSpan"><button class="button" onclick="showPens(document.getElementById(\'imgContainer\'))">Codepens</button><button class="button" onclick="showLayouts(document.getElementById(\'show-area\'))">Layouts</button></span</div>'
 }
 function showGraphicsNav() {
-  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><button class="button" onclick="showGraphics(document.getElementById(\'show-area\'))">Graphics</button></div>'
+  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><span class="dropContentSpan"><button class="button" onclick="showGraphics(document.getElementById(\'imgContainer\'))">Graphics</button></span></div>'
 }
 function showProgramsNav() {
-  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><button class="button" onclick="showSoftware(document.getElementById(\'show-area\'))">Software</button><button class="button" onclick="showApps(document.getElementById(\'show-area\'))">Apps</button></div>'
+  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><span class="dropContentSpan"><button class="button" onclick="showSoftware(document.getElementById(\'imgContainer\'))">Software</button><button class="button" onclick="showApps(document.getElementById(\'show-area\'))">Apps</button></span></div>'
 }
 //drop down menue content button functions
 function showPens() {
-  document.getElementById('show-area').innerHTML = '<div class="show-area"><div class="item__container"><div class="item_img_container"><a href="https://codepen.io/DemonNoSh0kan/details/zYJeWLz"data-hover="Dropdown Menu Button "class="item"><img src="showcase-items/dropdown_menu.jpg" alt="Dropdown menu button"class="img"></a></div><div class="item_img_container"><a href="https://codepen.io/DemonNoSh0kan/details/vYzGKZo"data-hover="Space Odyssey Background"class="item"><img src="showcase-items/space_odyssey_background.jpg" alt="Dropdown menu button"class="img"></a></div><div class="item_img_container"><a href="https://codepen.io/DemonNoSh0kan/pen/XWydVRY"data-hover="Scroll onclick"class="item"><img src="showcase-items/scroll_onclick_button.jpg" alt="scroll-onclick"class="img"></a></div></div></div>';
+  document.getElementById('imgContainer').innerHTML = '<div class="imgContainer"><span class="penButtonSpan"><button class="Button"><a href="https://codepen.io/DemonNoSh0kan/pen/zYJeWLz">Hover Dropdown Menu</a></button><button class="Button"><a href="https://codepen.io/DemonNoSh0kan/pen/vYQmRwG">Popup Onclick</a></button><button class="Button"><a href="https://codepen.io/DemonNoSh0kan/pen/VwVmbOe">Replace HTML Onclick</a></button></span><span class="penButtonSpan"><button class="Button"><a href="">Space Odyssey</a></button></span></div>'
 }
 function showLayouts() {
-  document.getElementById('show-area').innerHTML = '<div class="show-area"><div class="item__container"><div class="item_img_container"><a href="https://codepen.io/DemonNoSh0kan/details/XWPwRwo"data-hover="Portfolio Layout"class="item"><img src="showcase-items/webpage_layout1.0.jpg" alt="webpage_layout1.0"class="img"></a></div></div></span></div>'
+  document.getElementById('imgContainer').innerHTML = '<div class="imgContainer"><span class="layoutsSpan"><button id="openFullView"><img src="img/layout001.jpg" alt="layout001" class="img"></button><div class="fullView"><button id=""exitFullView><h1>it works</h1></button></div></span></div>'
 }
 function showGraphics() {
-  document.getElementById('show-area').innerHTML = '<div class="show-area"><div class="item__container"><div class="item_img_container"></div></div></div>';
+  document.getElementById('imgContainer').innerHTML = '<div class="imgContainer"><div class="item__container"><div class="item_img_container"></div></div></div>';
 }
 function showSoftware() {
-  document.getElementById('show-area').innerHTML = '<div class="show-area"><div class="item__container"><div class="item_img_container"></div></div></div>'
+  document.getElementById('imgContainer').innerHTML = '<div class="imgContainer"><div class="item__container"><div class="item_img_container"></div></div></div>'
 }
 function showApps() {
-  document.getElementById('show-area').innerHTML = '<div class="show-area"><div class="item__container"><div class="item_img_container"></div></div></div>'
+  document.getElementById('imgContainer').innerHTML = '<div class="imgContainer"><div class="item__container"><div class="item_img_container"></div></div></div>'
 }
+//layout pop up funtions
+function closeForm() {
+  $('.fullView').removeClass('isVisible');
+}
+
+$(document).ready(function($) {
+  
+  /* Contact Form Interactions */
+  $('#openFullView').on('click', function(event) {
+    event.preventDefault();
+
+    $('.fullView').addClass('isVisible');
+  });
+  
+    //close popup when clicking x or off popup
+  $('.fullView').on('click', function(event) {
+    if ($(event.target).is('.fullView') || $(event.target).is('#exitFullView')) {
+      event.preventDefault();
+      $(this).removeClass('isVisible');
+    }
+  });
+  
+  
+  
+  });

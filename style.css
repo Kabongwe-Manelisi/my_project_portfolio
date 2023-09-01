@@ -9,7 +9,14 @@ html {
     --text-color: rgb(255, 255, 255);
 }
 /*end*/
-
+/*fonts*/
+@font-face {
+    font-family: 'blackopsone';
+    /*font-weight: 400;*/
+    src: url('assets/fonts/blackopsone-regular-webfont.woff2') format('woff2'),
+        url('assets/fonts/blackopsone-regular-webfont.woff') format('woff');
+}
+/*end*/
 /*esentailly the background encapsulating all visible expressions on browser*/
 body {
     min-height: 100%;
@@ -91,12 +98,7 @@ body {
 }
 /*end*/
 /*button located inside drop down menue*/
-.innerBtnContainer {
-    padding: 0px;
-    position: absolute;
-    min-width: 100%;
-    max-width: 100%;
-}
+
 /*end*/
 /*BEGINNING OF button FUNCTIONS AND STYLES*/
 /*navigationBar drop button (the actual button)*/
@@ -106,27 +108,41 @@ body {
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--background-color);
+    cursor: pointer;
     background: transparent;
     color: var(--text-color);
     transition-duration: 500ms;
+    transition : 0.2s
     transition-timing-function: ease-in-out;
 }
 .dropbtn:hover {
     background: var(--background-color);
 }
+.dropbtn:active {
+    transform: scale(0.96);
+}
 /*end*/
-/*navigation bar drop menue*/
+/*navigation bar drop content*/
+.dropContentContainer {
+    min-height: 50px;
+}
 @keyframes dropDownContent{
     from {opacity: 0;}
     to {opacity: 1;}
 }
 .dropDownContent {
-    min-height: 50px;
     display: flex;
-    justify-content: center;
+    min-height: 50px;
     animation-name: show_area;
     animation-duration: 2.5s;
     animation-iteration-count: 1;
+}
+.dropContentSpan {
+    min-width: 100%;
+    max-height: 25px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 .button {
@@ -136,155 +152,129 @@ body {
     border-radius: 5px;
     background: transparent;
     box-shadow: 0 0px  10px var(--theme-color);
+    cursor: pointer;
     min-width: 100px;
-    margin: auto 10px;
     transition-duration: 500ms;
+    transition: 0.2s;
     transition-timing-function: ease-in-out;
 }
 .button:hover {
     background: var(--theme-color);
     box-shadow: none;
 }
+.button:active {
+    transform: scale(0.96);
+}
 /*end of hover and dropdown functions and styles*/
 /*end of navigation bar drop menue buttons*/
 /*end of navigation bar*/
 
-/*BEGINNING OF THE BODY*/
-
-.container {
-    margin: auto;
-    width: 80%;
-    min-height: 100px;
-    background: white;
-}
-
-.card-body {
-    padding: 30px;
-}
-
-.badge__container {
+/*BEGINNING OF THE main  BODY container*/
+.bodyContainer {
     display: flex;
-    margin-top: 50px;
-    min-height: 100px;
-    justify-content: center;
+    min-height: 500px;
+    /*max-height: 100%;*/
 }
-
-.badge {
-    margin: 0 10px;
-    min-width: 100px;
-    max-width: 100px;
-    max-height: 50px;
-    padding: 10px;
-    border-radius: 15px;
-    background:black;
-    box-shadow: 0 0 5px var(--theme-color);
-    text-align: center;
-}
-
-.card {
-    background: var(--background-color);
-    border-radius: 15px;
-    box-shadow: 0 0 20px   var(--theme-color);
-    min-height: 600px;
-    max-height: 100%;
-    max-width: 400px;
-    margin: 20px;
-}
-
-
-
-.show-area {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background: gold;
-}
-
-span {
-    display: flex;
-    justify-content: space-around;
-    
-    height: 100%;
-    border: 5px dotted red;
-}
-
-.item__container {
-    box-shadow: 0 0 20px var(--theme-color);
-    /*background: var(--background-color);*/
-    border-radius: 20px;
-    padding: 30px;
-    min-height: 80%;
-    min-width: 80%;
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    text-align: center;
-    
-}
-
-/*the following sigment is for the index page*/
+/*body image container*/
 @keyframes show_area{
     from {opacity: 0;}
     to {opacity: 1;}
 }
-.item_container__show_area {
+.imgContainer {
+    width: 80%;
     margin: auto;
-    width: 50%;
-    color: var(--theme-color);
-    text-align: center;
-    animation-name: show_area;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
-}
-/*end of sgment*/
-
-
-
-
-.item_img_container {
-    background: grey;
-    margin: auto;
-    box-shadow: 0 0 10px var(--theme-color);
     transition: 250ms;
     animation-name: show_area;
     animation-duration: 5s;
     animation-iteration-count: 1;
 }
-
+/*end*/
+/*body images plus buttons */
+/*images*/
 .img {
-    width: 10%;
+    max-width: 10%;
+    transition: 250ms;
 }
-
-.item_img_container:hover {
-    transform: scale(1.2);
+.img:hover {
+    transform: scale(1.2);   
 }
-
-.item:before {
-    content: attr(data-hover);
+.fullView {
     visibility: hidden;
-    opacity: 0;
-    background-color: var(--background-color);
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    transition: opacity 1s ease-in-out;
-    position: absolute;
-    top: 110%;
   }
-  
-.item:hover:before {
-    opacity: 1;
+.fullView.isVisible {
     visibility: visible;
+  }
+  .form-popup-bg {
+    visibility: hidden;
+  }
+  .form-popup-bg.is-visible {
+    visibility: visible;
+  }
+/*end*/
+/*buttons*/
+.penButtonSpan {
+    margin: 5% 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.Button {
+    border: none;
+    background: none;
+
 }
 
-.card-footer {
+
+span a {
+    
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color);
+}
+span a::before {
+    content: '';
+    display: block;
+    height: 0.1px;
+    box-shadow: 0 10px 1.5px var(--theme-color);
+    position: absolute;
+    top: 1em;
+    left: 0;
+    right: 0;
+    transform: scale(0,1);
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+}
+span a:hover::before {
+    transform: scale(1,1);
+}
+/*end*/
+/*end of the main body container*/
+/*beginning of the footer container*/
+footer {
     background: var(--theme-color);
     width: 100%;
-    text-align: center;
     margin-top: auto;
 }
-
+/*un-ordered list containter*/
+.footerList {
+    display: flex;
+    justify-content: space-around;
+}
+ ul li {
+    font-family: 'blackopsone';
+    font-size: 1.5rem;
+    list-style: none;
+    transition: 250ms;
+}
+li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+ul li:hover {
+    transform: scale(1.2);
+}
+/*end of un-ordered list container*/
+/*end of footer container*/
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -297,113 +287,9 @@ span {
     margin: 5px;
 }
 
-/*.card-footer h2 {
-    font-size: 1.5rem;
-}*/
-/*
-@media (min-width: 701px) {
-    .item__container {
-        width: 100%;
-    }
-
-    .sub_nav__container {
-        display: flex;
-    }
-}*/
-
-@media (max-width: 1000px) {
-    .header-container {
-        font-size: 1rem;
-    }
-    .nav-container{
-        font-size: 1rem;
-        margin: 0 auto;
-        display: block;
-        margin-bottom: 100px;
-    }
-
-    nav ul {
-        display: block;
-        list-style: none;
-    }
-
-    .sub_nav__container {
-        padding: 10px 0;
-    }
-
-    .dropbtn {
-        font-size: 1rem;
-        width: 80%;
-        height: 100%;
-    }
-
-    .drop_button {
-        max-width: 10px;
-    }
-
-    .card-header {
-        width: 100px;
-        margin: 30px 0;
-    }
-
-    
-
-    .card {
-        min-width: 100%;
-        font-size: 1rem;
-    }
-
-    .card-body {
-        padding: 0;
-        text-align: center;
-    }
-
-
-    .container {
-        display: block;
-    }
-    
-    .sub-container {
-        width: 80%;
-        text-align: center;
-    }
-
-    .dropbtn{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    span {
-        max-height: 100%;
-        margin: 30px 0;
-    }
-
-    .show-area {
-        min-height: 250px;
-    }
-    
-    .item__container {
-        display: flex;
-        min-height: 250px;
-        width: 100%;
-    }
-    
-    .item_img_container {
-        margin: auto;
-    }
-
-    
-    .footer-container {
-        justify-content: space-between;
-        width: 30%;
-    }
-    /*.social-icon {
-    }*/
-}
+@media (max-width: 1000px) {}
 
 @media (max-width: 350px) {
-    .container {
-        display: block;
-    }
+    
 }
 
