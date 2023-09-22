@@ -28,6 +28,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+.disableScroll {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
 /*end*/
 /*BEGINNING OF NAVIGATION BAR*/
 /*navigationBar parent container*/
@@ -126,14 +130,14 @@ body {
 .dropContentContainer {
     min-height: 50px;
 }
-@keyframes dropDownContent{
+@keyframes pageAnimation{
     from {opacity: 0;}
     to {opacity: 1;}
 }
 .dropDownContent {
     display: flex;
     min-height: 50px;
-    animation-name: show_area;
+    animation-name: pageAnimation;
     animation-duration: 2.5s;
     animation-iteration-count: 1;
 }
@@ -171,81 +175,11 @@ body {
 
 /*BEGINNING OF THE main  BODY container*/
 .bodyContainer {
+    overflow: auto;
     display: flex;
     min-height: 500px;
+    max-height: 500px;
     /*max-height: 100%;*/
-}
-/*body image container*/
-@keyframes show_area{
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-.imgContainer {
-    width: 80%;
-    margin: auto;
-    transition: 250ms;
-    animation-name: show_area;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
-}
-/*end*/
-/*body images plus buttons */
-/*images*/
-.img {
-    max-width: 10%;
-    transition: 250ms;
-}
-.img:hover {
-    transform: scale(1.2);   
-}
-.fullView {
-    visibility: hidden;
-  }
-.fullView.isVisible {
-    visibility: visible;
-  }
-  .form-popup-bg {
-    visibility: hidden;
-  }
-  .form-popup-bg.is-visible {
-    visibility: visible;
-  }
-/*end*/
-/*buttons*/
-.penButtonSpan {
-    margin: 5% 0;
-    min-width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-.Button {
-    border: none;
-    background: none;
-
-}
-
-
-span a {
-    
-    position: relative;
-    text-decoration: none;
-    color: var(--text-color);
-}
-span a::before {
-    content: '';
-    display: block;
-    height: 0.1px;
-    box-shadow: 0 10px 1.5px var(--theme-color);
-    position: absolute;
-    top: 1em;
-    left: 0;
-    right: 0;
-    transform: scale(0,1);
-    transition-duration: 250ms;
-    transition-timing-function: ease-in;
-}
-span a:hover::before {
-    transform: scale(1,1);
 }
 /*end*/
 /*end of the main body container*/
@@ -282,14 +216,104 @@ ul li:hover {
     margin-right: auto;
 }
 
+/*the following contains code mainly for the styling of html elements in 'script.js'*/
+/*body image container*/
 
-.card-footer a {
-    margin: 5px;
+.imgContainer {
+    width: 80%;
+    margin: auto;
+    transition: 250ms;
+    animation-name: pageAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+/*end*/
+/*buttons*/
+.penButtonSpan {
+    margin: 5% 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.Button {
+    border: none;
+    background: none;
+
 }
 
-@media (max-width: 1000px) {}
 
-@media (max-width: 350px) {
+
+span a {
     
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color);
+}
+span a::before {
+    content: '';
+    display: block;
+    height: 0.1px;
+    box-shadow: 0 10px 1.5px var(--theme-color);
+    position: absolute;
+    top: 1em;
+    left: 0;
+    right: 0;
+    transform: scale(0,1);
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+}
+span a:hover::before {
+    transform: scale(1,1);
 }
 
+/*the following code is for the flip cards uder the 'showGraphics' function in the script.js file*/
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flipCard {
+    background-color: transparent;
+    max-width: 100px;
+    height: 100px;
+    border: 1px solid #f1f1f1;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flipCard:hover .flipCardInner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flipCardFront, .flipCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flipCardFront {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flipCardBack {
+    background: lime;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .img{
+    background: red;
+    max-width: 100%;
+    max-height: 100%;
+  }
