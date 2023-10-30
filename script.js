@@ -6,13 +6,13 @@ function showGraphicsNav() {
   document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><span class="dropContentSpan">  <button class="button" onclick="landScapes(document.getElementById(\'bodyContainer\'))">LandScapes</button>  <button class="button" onclick="portraits(document.getElementById(\'bodyContainer\'))">Portraits</button>  <button class="button" onclick="creatures(document.getElementById(\'bodyContainer\'))">Creatures</button>  </span></div>'
 }
 function showProgramsNav() {
-  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><span class="dropContentSpan"><button class="button" onclick="showSoftware(document.getElementById(\'imgContainer\'))">Software</button><button class="button" onclick="showApps(document.getElementById(\'show-area\'))">Apps</button></span></div>'
+  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><span class="dropContentSpan"><button class="button" onclick="showSoftware(document.getElementById(\'imgContainer\'))">Programs</button><button class="button" onclick="showApps(document.getElementById(\'show-area\'))">Apps</button></span></div>'
 }
 //drop down menue content button functions
 //results from the 'showacaodingNav' function
 //CODEPENS BUTTON 
 function showPens() {
-  document.getElementById('bodyContainer').innerHTML = '<div class="imgContainer"><span class="penButtonSpan">  <button class="Button"><a href="https://codepen.io/DemonNoSh0kan/pen/zYJeWLz">Hover Dropdown Menu</a></button>  <button class="Button"><a href="https://codepen.io/DemonNoSh0kan/pen/vYQmRwG">Popup Onclick</a></button>  <button class="Button"><a href="https://codepen.io/DemonNoSh0kan/pen/VwVmbOe">Replace HTML Onclick</a></button>  </span><span class="penButtonSpan"><button class="Button"><a href="">Space Odyssey</a></button></span></div>'
+  document.getElementById('bodyContainer').innerHTML = '<div class="imgContainer"><span class="penButtonSpan">  <button class="Button"><a href="https://codepen.io/DemonNoSh0kan/pen/zYJeWLz">Hover Dropdown Menu</a></button>   <button class="Button"><a href="https://codepen.io/DemonNoSh0kan/pen/eYbyrpj">Scrolling Div</a></button>   <button class="Button"><a href="https://codepen.io/DemonNoSh0kan/pen/vYQmRwG">Popup Onclick</a></button>   <button class="Button"><a href="https://codepen.io/DemonNoSh0kan/pen/GRPEbrr">Flipping Card</a></button>   <button class="Button"><a href="https://codepen.io/DemonNoSh0kan/pen/VwVmbOe">Replace HTML Onclick</a></button>  </span><span class="penButtonSpan"><button class="Button"><a href="">Space Odyssey</a></button></span></div>'
 }
 
 //Results from the 'showGraphicsNav' function
@@ -32,6 +32,6 @@ function showSoftware() {
   document.getElementById('imgContainer').innerHTML = '<div class="imgContainer"><div class="item__container"><div class="item_img_container"></div></div></div>'
 }
 function showApps() {
-  document.getElementById('imgContainer').innerHTML = '<div class="imgContainer"><div class="item__container"><div class="item_img_container"></div></div></div>'
+  document.getElementById('bodyContainer').innerHTML = '<div class="imgContainer"><span class="penButtonSpan">  <button class="Button"><a href="https://github.com/Kabongwe-Manelisi/mysqlConnector.py">FlaskApp</button>  </span> </div>'
 }
 
