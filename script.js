@@ -3,7 +3,7 @@ function showCodingNav() {
   document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><span class="dropContentSpan"><button class="button" onclick="showPens(document.getElementById(\'bodyContainer\'))">Codepens</button></span></div>'
 }
 function showGraphicsNav() {
-  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><span class="dropContentSpan">  <button class="button" onclick="landScapes(document.getElementById(\'bodyContainer\'))">LandScapes</button>  <button class="button" onclick="portraits(document.getElementById(\'bodyContainer\'))">Portraits</button>  <button class="button" onclick="creatures(document.getElementById(\'bodyContainer\'))">Creaturs</button></span></div>'
+  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><span class="dropContentSpan">  <button class="button" onclick="landScapes(document.getElementById(\'bodyContainer\'))">LandScapes</button>  <button class="button" onclick="portraits(document.getElementById(\'bodyContainer\'))">Portraits</button>  <button class="button" onclick="creatures(document.getElementById(\'bodyContainer\'))">Creatures</button>  </span></div>'
 }
 function showProgramsNav() {
   document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><span class="dropContentSpan"><button class="button" onclick="showSoftware(document.getElementById(\'imgContainer\'))">Software</button><button class="button" onclick="showApps(document.getElementById(\'show-area\'))">Apps</button></span></div>'
@@ -18,7 +18,7 @@ function showPens() {
 //Results from the 'showGraphicsNav' function
 //LANDSCAPES BUTTON
 function landScapes() {
-  document.getElementById('bodyContainer').innerHTML = '<div class="imgContainer">   <div class="flipCard"><div class="flipCardInner"><div class="flipCardFront"></div><div class="flipCardBack"><img class="img" src="img/kmmanzini.png"></div></div></div>   </div>';
+  document.getElementById('bodyContainer').innerHTML = '<div class="imgContainer"></div>';
 }
 //PORTRAITS BUTTON
 function portrsaits() {
@@ -26,7 +26,7 @@ function portrsaits() {
 }
 //CREATURES BUTTON
 function creatures() {
-  document.getElementById('imgContainer').innerHTML ='<div class="imgContainer"></div>'
+  document.getElementById('bodyContainer').innerHTML ='<div class="imgContainer"> <div class="flipcardSpan"> <div class="flipCard"><div class="flipCardInner"><div class="flipCardFront"></div><div class="flipCardBack"><img class="img" src="img/graphics/creatures/drake.png"></div></div></div>  </div>  </div>'
 }
 function showSoftware() {
   document.getElementById('imgContainer').innerHTML = '<div class="imgContainer"><div class="item__container"><div class="item_img_container"></div></div></div>'
