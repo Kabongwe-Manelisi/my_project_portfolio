@@ -1,6 +1,7 @@
 html {
     height: 100%;
-    font-family: Ubuntu;
+    --font: Ubuntu;
+
 }
 /*variables*/
 :root {
@@ -19,6 +20,7 @@ html {
 /*end*/
 /*esentailly the background encapsulating all visible expressions on browser*/
 body {
+    font-family: var(--font);
     min-height: 100%;
     margin: 0;
     width: 100%;
@@ -107,7 +109,7 @@ body {
 /*BEGINNING OF button FUNCTIONS AND STYLES*/
 /*navigationBar drop button (the actual button)*/
 .dropbtn{
-    padding: 16px;
+    padding: 15px;
     width: 100%;
     border: none;
     border-radius: 10px;
@@ -115,6 +117,8 @@ body {
     cursor: pointer;
     background: transparent;
     color: var(--text-color);
+    font-family: var(--font);
+    font-size: .75rem;
     transition-duration: 500ms;
     transition : 0.2s;
     transition-timing-function: ease-in-out;
@@ -195,8 +199,7 @@ footer {
     justify-content: space-around;
 }
  ul li {
-    font-family: 'blackopsone';
-    font-size: 1.5rem;
+    font-size: .5rem;
     list-style: none;
     transition: 250ms;
 }
