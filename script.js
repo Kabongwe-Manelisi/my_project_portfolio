@@ -29,9 +29,9 @@ function creatures() {
   document.getElementById('bodyContainer').innerHTML ='<div class="imgContainer"> <div class="flipcardSpan"> <div class="flipCard"><div class="flipCardInner"><div class="flipCardFront"></div><div class="flipCardBack"><img class="img" src="img/graphics/creatures/drake.png"></div></div></div>  </div>  </div>'
 }
 function showSoftware() {
-  document.getElementById('imgContainer').innerHTML = '<div class="imgContainer"><div class="item__container"><div class="item_img_container"></div></div></div>'
+  document.getElementById('bodyContainer').innerHTML = '<div class="imgContainer"><span class="penButtonSpan">  <button class="Button"><a href="https://github.com/Kabongwe-Manelisi/mysqlConnector.py">mysqlConnector.py</button>  </span> </div>'
 }
 function showApps() {
-  document.getElementById('bodyContainer').innerHTML = '<div class="imgContainer"><span class="penButtonSpan">  <button class="Button"><a href="https://github.com/Kabongwe-Manelisi/mysqlConnector.py">FlaskApp</button>  </span> </div>'
+  document.getElementById('bodyContainer').innerHTML = '<div class="imgContainer"><span class="penButtonSpan">  <button class="Button"><a href="https://github.com/Kabongwe-Manelisi/FlaskApp">FlaskApp</button>  </span> </div>'
 }
 
