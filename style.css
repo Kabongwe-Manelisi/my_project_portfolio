@@ -30,6 +30,11 @@ body {
     display: flex;
     flex-direction: column;
 }
+.userManual{
+    background: green;
+    min-height: 100px;
+    min-width: 100px;
+}
 .disableScroll {
     overflow-y: hidden;
     overflow-x: hidden;
