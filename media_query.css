@@ -1,0 +1,10 @@
+@media screen and (max-width: 900px) {
+
+    .header {
+        display: block;
+    }
+
+    .topRightChildContainer{
+        display: none;
+    }
+}
