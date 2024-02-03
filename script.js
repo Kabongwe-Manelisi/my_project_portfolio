@@ -29,7 +29,7 @@ function creatures() {
   document.getElementById('bodyContainer').innerHTML ='<div class="imgContainer"> <div class="flipcardSpan"> <div class="flipCard"><div class="flipCardInner"><div class="flipCardFront"></div><div class="flipCardBack"><img class="img" src="img/graphics/creatures/drake.png"></div></div></div>  </div>  </div>'
 }
 function showSoftware() {
-  document.getElementById('bodyContainer').innerHTML = '<div class="imgContainer"><span class="penButtonSpan">  <button class="Button"><a href="https://github.com/Kabongwe-Manelisi/mysqlConnector.py">mysqlConnector.py</button>  <button class="Button"><a href="https://github.com/Kabongwe-Manelisi/financial-Visualizer">Financial Visiualizer.py</button> </span> </div>'
+  document.getElementById('bodyContainer').innerHTML = '<div class="imgContainer"><span class="penButtonSpan">  <button class="Button"><a href="https://github.com/Kabongwe-Manelisi/mysqlConnector.py">mysqlConnector.py</button>  <button class="Button"><a href="https://github.com/Kabongwe-Manelisi/financial-Visualizer">financialVisiualizer.py</button>  <button class="Button"><a href="https://github.com/Kabongwe-Manelisi/accessUserAcc">accessUserAcc.py</button>   <button class="Button"><a href="https://github.com/Kabongwe-Manelisi/createUserAccount">createUserAcc</button> </span> </div>'
 }
 function showApps() {
   document.getElementById('bodyContainer').innerHTML = '<div class="imgContainer"><span class="penButtonSpan">  <button class="Button"><a href="https://github.com/Kabongwe-Manelisi/FlaskApp">FlaskApp</button>  </span> </div>'
