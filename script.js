@@ -23,7 +23,7 @@ function landScapes() {
 }
 //PORTRAITS BUTTON
 //Big daddy's garage
-function portrsaits() {
+function portraits() {
   document.getElementById('bodyContainer').innerHTML ='<div class="imgContainer">  <div class="flipcardSpan"> <div class="flipCard"><div class="flipCardInner"><div class="flipCardFront"></div><div class="flipCardBack"><img class="img" src="img/graphics/creatures/drake.png"></div></div></div>  </div>  </div>'
 }
 //CREATURES BUTTON
