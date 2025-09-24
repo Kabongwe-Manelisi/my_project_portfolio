@@ -275,7 +275,10 @@ span a:hover::before {
 }
 
 .flipcardSpan{ 
-  /*  justify-content: center;*/
+    margin: 5% 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 /*the following code is for the flip cards uder the 'showGraphics' function in the script.js file*/
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
