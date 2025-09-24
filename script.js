@@ -3,7 +3,7 @@ function showCodingNav() {
   document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><span class="dropContentSpan"><button class="button" onclick="showPens(document.getElementById(\'bodyContainer\'))">Codepens</button></span></div>'
 }
 function showGraphicsNav() {
-  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><span class="dropContentSpan">  <button class="button" onclick="landScapes(document.getElementById(\'bodyContainer\'))">LandScapes</button>  <button class="button" onclick="portraits(document.getElementById(\'bodyContainer\'))">Portraits</button>  <button class="button" onclick="creatures(document.getElementById(\'bodyContainer\'))">Creatures</button>  </span></div>'
+  document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><span class="dropContentSpan">  <button class="button" onclick="landScapes(document.getElementById(\'bodyContainer\'))">Macksons Hyperzone</button>  <button class="button" onclick="portraits(document.getElementById(\'bodyContainer\'))">Big Daddy\'s Garage</button>  <button class="button" onclick="creatures(document.getElementById(\'bodyContainer\'))">Personal Designs</button>  </span></div>'
 }
 function showProgramsNav() {
   document.getElementById('dropDownContent').innerHTML = '<div class="dropDownContent"><span class="dropContentSpan"><button class="button" onclick="showSoftware(document.getElementById(\'imgContainer\'))">Programs</button><button class="button" onclick="showApps(document.getElementById(\'show-area\'))">Apps</button></span></div>'
